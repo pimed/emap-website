@@ -12,6 +12,7 @@
 html{scroll-behavior:smooth}
 body{margin:0;background:#FBFAF8}
 a{color:#317083}a:hover{color:#23535F}
+section{scroll-margin-top:90px}
 @media (max-width:640px){h1{font-size:40px!important}h2{font-size:30px!important}}
 </style>
 </head>
@@ -23,10 +24,16 @@ a{color:#317083}a:hover{color:#23535F}
 <div style="font-family: 'Source Sans 3', system-ui, sans-serif; color: #1C1F24; background: #FBFAF8; width: 100%">
 
 <!-- NAV -->
-<header style="border-bottom: 1px solid #E6E2DD; background: #FFFFFF">
+<header style="position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #E6E2DD; background: #FFFFFF">
 <nav aria-label="Main" style="max-width: 1160px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
 <a href="#top" style="display: flex; align-items: center"><img src="images/logo.png" alt="eMAP — Ethical Multimodal AI Platform" style="height: 44px; width: auto; display: block"></a>
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 16px; font-weight: 500"><a href="#problem" style="color: rgb(61, 66, 74); text-decoration: none">Problem</a><a href="#platform" style="color: rgb(61, 66, 74); text-decoration: none">Platform</a><a href="#ethics" style="color: rgb(61, 66, 74); text-decoration: none">Ethics</a><a href="#team" style="color: rgb(61, 66, 74); text-decoration: none">Team</a><a href="#contact" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0px 20px; border-radius: 8px; background: rgb(118, 36, 31); color: rgb(255, 255, 255); text-decoration: none; font-weight: 600">Partner with us</a></div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 16px; font-weight: 500">
+     <a href="#problem" style="color: rgb(61, 66, 74); text-decoration: none">Problem</a>
+     <a href="#platform" style="color: rgb(61, 66, 74); text-decoration: none">Platform</a>
+     <a href="#evidence" style="color: rgb(61, 66, 74); text-decoration: none">Research</a>
+     <a href="#ethics" style="color: rgb(61, 66, 74); text-decoration: none">Ethics</a>
+     <a href="#team" style="color: rgb(61, 66, 74); text-decoration: none">Team</a>
+     <a href="#contact" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0px 20px; border-radius: 8px; background: rgb(118, 36, 31); color: rgb(255, 255, 255); text-decoration: none; font-weight: 600">Contact us</a></div>
 </nav>
 </header>
 
@@ -34,8 +41,8 @@ a{color:#317083}a:hover{color:#23535F}
 <section id="top" style="background: #FFFFFF; border-bottom: 1px solid #E6E2DD">
 <div style="max-width: 1160px; margin: 0 auto; padding: 88px 24px 96px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
 <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #317083">THE MISSING AI LAYER IN PROSTATE BIOPSY&nbsp;</p>
-<h1 style="margin: 0; font-size: 56px; line-height: 1.05; font-weight: 800; letter-spacing: -0.02em; color: #1C1F24">MRI and Ultrasound, read together by AI, targeted by you.&nbsp;</h1>
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #317083">THE MISSING AI LAYER IN PROSTATE BIOPSY</p>
+<h1 style="margin: 0; font-size: 56px; line-height: 1.05; font-weight: 800; letter-spacing: -0.02em; color: #1C1F24">MRI and Ultrasound, read together by AI, targeted by you.</h1>
 <p style="margin: 0; font-size: 20px; line-height: 1.55; color: #4A4F57; max-width: 34em">eMAP leverages multimodal AI by using ultrasound and MRI to give urologists csPCa predictions during biopsy, so every core counts.</p>
 
 
@@ -52,24 +59,39 @@ a{color:#317083}a:hover{color:#23535F}
 <div style="max-width: 1160px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
 <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #317083">The problem</p>
-<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700; letter-spacing: -0.01em">Prostate biopsy is still guided by an imaging modality that can't see most cancers.</h2>
+<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700; letter-spacing: -0.01em">Every prostate biopsy uses ultrasound. Almost none use it to detect cancer.</h2>
 <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A4F57">Most clinically significant prostate cancers are hard to distinguish on conventional ultrasound. MRI-targeted biopsy helps, but it depends on MRI access, expert reads and fusion workflows that many practices can't offer every patient.</p>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
 <div style="background: #FFFFFF; border: 1px solid #E6E2DD; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
 <p style="margin: 0; font-size: 40px; font-weight: 800; color: #76241F">1 in 2</p>
 <h3 style="margin: 0; font-size: 20px; font-weight: 700">Missed significant cancer</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A4F57">Systematic ultrasound-guided biopsy can miss csPCa, delaying treatment (PROMIS Trial).</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A4F57">Systematic ultrasound-guided biopsy can miss csPCa, delaying treatment.</p>
+<p style="margin: 0; margin-top: auto; font-size: 13px; color: #5B616A">
+  Source: <a href="https://doi.org/10.1016/S0140-6736(16)32401-1" target="_blank" rel="noopener">Ahmed et al., Lancet 2017 (PROMIS)</a>
+</p>
 </div>
 <div style="background: #FFFFFF; border: 1px solid #E6E2DD; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
 <p style="margin: 0; font-size: 40px; font-weight: 800; color: #76241F">2x</p>
 <h3 style="margin: 0; font-size: 20px; font-weight: 700">Over-diagnosis of indolent cancer</h3>
-<div style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A4F57"><div>Untargeted biopsy diagnosed more than twice as many men with low-risk cancer as MRI-targeted biopsy, while finding less cspca (PRECISION Trial).</div><div><br></div></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A4F57">Untargeted biopsy diagnosed more than twice as many men with low-risk cancer as MRI-targeted biopsy, while finding less csPCa.</p><p style="margin: 0; margin-top: auto; font-size: 13px; color: #5B616A">
+  Source: <a href="https://doi.org/10.1056/NEJMoa1801993" target="_blank" rel="noopener">Kasivisvanathan et al., NEJM 2018 (PRECISION)</a>
+</p>
 </div>
-<div style="background: #FFFFFF; border: 1px solid #E6E2DD; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<!-- <div style="background: #FFFFFF; border: 1px solid #E6E2DD; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
 <p style="margin: 0; font-size: 40px; font-weight: 800; color: #76241F">3 in 5</p>
 <h3 style="margin: 0; font-size: 20px; font-weight: 700">No pre-biopsy MRI</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A4F57">Guideline care depends on zip code: in 2023, 3 in 5 US veterans had no MRI before biopsy, with wider gaps for rural and Black veterans.(Huang et al., JAMA Netw Open 2025)</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A4F57">Guideline care depends on zip code: in 2023, 3 in 5 US veterans had no MRI before biopsy, with wider gaps for rural and Black veterans.</p>
+<p style="margin: 0; margin-top: auto; font-size: 13px; color: #5B616A">
+     Source: <a href="https://doi.org/10.1001/jamanetworkopen.2025.43567" target="_blank" rel="noopener">Huang et al., JAMA Netw Open 2025</a>
+</p> -->
+<div style="background: #FFFFFF; border: 1px solid #E6E2DD; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<p style="margin: 0; font-size: 40px; font-weight: 800; color: #76241F">1 in 3</p>
+<h3 style="margin: 0; font-size: 20px; font-weight: 700">No pre-biopsy MRI</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A4F57">In 2026, about 1 in 3 US men had no pre-biopsy MRI.</p>
+<p style="margin: 0; margin-top: auto; font-size: 13px; color: #5B616A">
+     Source: <a href="https://doi.org/10.1001/jamaoncol.2026.3620" target="_blank" rel="noopener">Rhodes S. et al., JAMA Oncol 2026</a>
+</p>
 </div>
 </div>
 </div>
@@ -81,7 +103,7 @@ a{color:#317083}a:hover{color:#23535F}
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
 <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #317083">The platform</p>
 <h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700; letter-spacing: -0.01em">csPCa detection, integrated into existing biopsy workflow.</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A4F57">eMAP is a decision support tool. It reads the images urologists already capture and in both cases where MRI is available and unavailable using ultrasound only inference to detect csPCa lesions in the biopsy room,.&nbsp;</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #4A4F57">eMAP is a decision-support tool built on the imaging urologists already use: ultrasound, plus MRI when available.</p>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px">
 <div style="display: flex; flex-direction: column; gap: 14px; padding-top: 20px; border-top: 3px solid #317083">
@@ -92,14 +114,40 @@ a{color:#317083}a:hover{color:#23535F}
 <div style="display: flex; flex-direction: column; gap: 14px; padding-top: 20px; border-top: 3px solid #432742">
 <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #432742">02 · Predict</p>
 <h3 style="margin: 0; font-size: 22px; font-weight: 700">Multimodal AI detects suspicious lesions</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A4F57">Models trained on pathology-confirmed biopsies highlight regions likely to harbor csPCa directly in ultrasound space.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A4F57">The AI model detects regions likely to harbor csPCa directly in ultrasound space.</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 14px; padding-top: 20px; border-top: 3px solid #76241F">
 <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #76241F">03 · Decide</p>
 <h3 style="margin: 0; font-size: 22px; font-weight: 700">The urologist stays in control</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A4F57">Suggested targets inform, never dictate. Every acceptance or override rests with the urologist.&nbsp;</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A4F57">Suggested targets inform, never dictate. Every acceptance or override rests with the urologist.</p>
 </div>
 </div>
+</div>
+</section>
+
+<!-- EVIDENCE -->
+<section id="evidence" style="padding: 96px 24px; background: #1C1F24">
+<div style="max-width: 1160px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #7FC3D3">Our research</p>
+<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700; color: #FFFFFF">Our ultrasound AI already matches expert readers.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #C3C8CE">In our team's published micro-ultrasound study, AI detected clinically significant prostate cancer as well as or better than six expert readers.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
+<div style="background: #262A31; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 40px; font-weight: 800; color: #FFFFFF">0.85 vs 0.78</p>
+<p style="margin: 0; font-size: 15px; color: #C3C8CE">AUROC for csPCa detection: AI vs. six expert readers</p>
+</div>
+<div style="background: #262A31; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 40px; font-weight: 800; color: #FFFFFF">74% vs 63%</p>
+<p style="margin: 0; font-size: 15px; color: #C3C8CE">Sensitivity for csPCa: AI vs. expert readers</p>
+</div>
+<div style="background: #262A31; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 40px; font-weight: 800; color: #FFFFFF">73</p>
+<p style="margin: 0; font-size: 15px; color: #C3C8CE">independent test patients from two institutions</p>
+</div>
+</div>
+<p style="margin: 0; font-size: 13px; color: #C3C8CE">Source: <a href="https://doi.org/10.1038/s41391-026-01157-w" target="_blank" rel="noopener" style="color: #7FC3D3">Rusu et al., Prostate Cancer and Prostatic Diseases, 2026</a></p>
 </div>
 </section>
 
@@ -113,16 +161,16 @@ a{color:#317083}a:hover{color:#23535F}
 </div>
 <div style="flex: 1 1 520px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
 <div style="background: #FFFFFF; border: 1px solid #E6E2DD; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
-<h3 style="margin: 0; font-size: 18px; font-weight: 700">Calibrated confidence</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4A4F57">Every prediction will show how sure the model is, so uncertainty is visible, not hidden.</p>
+<h3 style="margin: 0; font-size: 18px; font-weight: 700">Visible uncertainty</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4A4F57">We’re building confidence scores into every prediction, so clinicians can see how sure the model is.</p>
 </div>
 <div style="background: #FFFFFF; border: 1px solid #E6E2DD; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
 <h3 style="margin: 0; font-size: 18px; font-weight: 700">Human override, always</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4A4F57">Clinicians acknowledge and can override any suggestion, and each decision will be &nbsp;recorded.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4A4F57">eMAP only suggests targets; the urologist always makes the final call.</p>
 </div>
 <div style="background: #FFFFFF; border: 1px solid #E6E2DD; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
 <h3 style="margin: 0; font-size: 18px; font-weight: 700">Built to generalize</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4A4F57"><span style="caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-size: medium">We’re testing performance across ultrasound vendors, not just the system a model was trained on.</span><br></p>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4A4F57">We’re testing performance across ultrasound vendors, not just the system a model was trained on.</p>
 </div>
 <div style="background: #FFFFFF; border: 1px solid #E6E2DD; border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
 <h3 style="margin: 0; font-size: 18px; font-weight: 700">Patient voice included</h3>
@@ -132,31 +180,31 @@ a{color:#317083}a:hover{color:#23535F}
 </div>
 </section>
 
-<!-- PROGRESS -->
-
-
 <!-- TEAM -->
 <section id="team" style="padding: 96px 24px">
 <div style="max-width: 1160px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
 <p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #317083">Team</p>
-<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700; letter-spacing: -0.01em">A multi-disciplinary team of clinicians and researchers.&nbsp;</h2>
+<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 700; letter-spacing: -0.01em">A multi-disciplinary team of clinicians and researchers.</h2>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
 <div style="display: flex; flex-direction: column; gap: 12px">
 <img src="images/team-1.png" alt="Team member photo" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px; display: block">
 <h3 style="margin: 0; font-size: 19px; font-weight: 700">Dr. Mirabela Rusu</h3>
-     <p style="margin: 0; font-size: 15px; color: #4A4F57">Project Lead · AI & Imaging · Assistant Professor of Radiology, Stanford Medicine </p>
+<p style="margin: 0; font-size: 15px; color: #4A4F57">Project Lead · AI & Imaging</p>
+<p style="margin: 0; font-size: 15px; color: #4A4F57">Assistant Professor of Radiology, Stanford University</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 12px">
 <img src="images/team-2.png" alt="Team member photo" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px; display: block">
 <h3 style="margin: 0; font-size: 19px; font-weight: 700">Dr. Nicole Martinez-Martin</h3>
-<p style="margin: 0; font-size: 15px; color: #4A4F57">Co-PI · Biomedical Ethics · Advisor Assistant Professor (Research) of Pediatrics, Biomedical Ethics, Stanford University </p>
+<p style="margin: 0; font-size: 15px; color: #4A4F57">Co-PI · Biomedical Ethics</p>
+<p style="margin: 0; font-size: 15px; color: #4A4F57">Assistant Professor (Research) of Pediatrics, Biomedical Ethics, Stanford University</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 12px">
 <img src="images/team-3.png" alt="Team member photo" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px; display: block">
 <h3 style="margin: 0; font-size: 19px; font-weight: 700">Dr. Geoffrey Sonn</h3>
-<p style="margin: 0; font-size: 15px; color: #4A4F57">Co-PI · Urology · Professor of Urology, Stanford University </p>
+<p style="margin: 0; font-size: 15px; color: #4A4F57">Co-PI · Urology</p>
+<p style="margin: 0; font-size: 15px; color: #4A4F57">Professor of Urology, Stanford University</p>
 </div>
 </div>
 </div>
@@ -166,10 +214,12 @@ a{color:#317083}a:hover{color:#23535F}
 <section id="contact" style="padding: 0 24px 96px">
 <div style="max-width: 1160px; margin: 0 auto; border-radius: 20px; background: #76241F; padding: 64px 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
 <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-size: 36px; line-height: 1.15; font-weight: 700; color: #FFFFFF">Raising a pre-seed round to reach our first prospective pilot.</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #F6E4E2">We're looking for investors, clinical collaborators and recruiting clinicians for interviews to help shape eMAP.&nbsp;</p>
+<h2 style="margin: 0; font-size: 36px; line-height: 1.15; font-weight: 700; color: #FFFFFF">We're looking for clinical collaborators and recruiting clinicians for interviews to help shape eMAP.</h2>
+<div style="display: flex; flex-direction: column; gap: 6px">
+  <p style="margin: 0; font-size: 14px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.08em; text-transform: uppercase; color: #F6E4E2">Contact</p>
+  <a href="mailto:emapai-study@stanford.edu" style="font-size: 17px; font-weight: 600; color: #FFFFFF; text-decoration: underline">emapai-study@stanford.edu</a>
 </div>
-<a href="mailto:[CONTACT@EMAIL]" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; border-radius: 8px; background: #FFFFFF; color: #1C1F24; text-decoration: none; font-weight: 700; font-size: 17px">Get in touch</a>
+</div>
 </div>
 </section>
 
